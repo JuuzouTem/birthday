@@ -6,7 +6,7 @@ Doğum günün; tüm kalpten dileklerinin, isteklerinin gerçekleştiği, başar
 
 Ağlamak istediğinde, gülmek istediğinde, kızmak istediğinde; gizlemeden, saklamadan, belki anlatarak, belki göstererek yaşamak istediklerini yaşamanı istiyorum. Daha bu satırlara sığdırmak istediğim tonlarca söz var ama hepsini bu mektubuma sığdıramam. Belki rüzgarın uğultusuna kulak verirsen dediklerimi duyabilirsin, kim bilir?
 
-Küslükler, tartışmalar, kırgınlıklar girerse bile bana hissettirdiğin arkadaşlığı asla unutmayacağım. Son 3 senede yaşadığım onca şeyin arasında hâlâ daha arkadaşlığını hissettirdiğin için sana edemeyeceğim kadar teşekkür borcum var. Teşekkürler! En kalpten hislerimle teşekkürler!
+Küslükler, tartışmalar, kırgınlıklar girerse bile bana hissettirdiğin arkadaşlığı asla unutmayacağım. Son 3 senede yaşadığın onca şeyin arasında hâlâ daha arkadaşlığını hissettirdiğin için sana edemeyeceğim kadar teşekkür borcum var. Teşekkürler! En kalpten hislerimle teşekkürler!
 
 YKS döneminin stresli aylarından dolayı erteliyorum fakat YKS sonuçları açıklanıp rahata erdiğimizde aklımdaki planı yapacağım, sözüm olsun! Ancak o zamana kadar senden beklemeni isteyeceğim. Umarım hediyeni beğenmişsindir! Fiziksel olarak veremesem de, kalpten bir hediye... Doğum günün tekrardan kutlu mutlu olsun!!!
 
@@ -20,10 +20,12 @@ function checkPassword() {
     if (input === 'masquerade') {
         document.getElementById('login-screen').style.display = 'none';
         document.getElementById('letter-screen').classList.remove('hidden');
+        music.loop = true;
+        music.volume = 0.4;
         music.play();
         startTypewriter();
     } else {
-        error.innerText = "Hımm, sanki siteye tam bakmamışsın? Tekrar dene :)";
+        error.innerText = "Hmmm, sanki siteye tam bakmamışsın? Tekrar dene :)";
     }
 }
 
