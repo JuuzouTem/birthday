@@ -6,7 +6,7 @@ Doğum günün; tüm kalpten dileklerinin, isteklerinin gerçekleştiği, başar
 
 Ağlamak istediğinde, gülmek istediğinde, kızmak istediğinde; gizlemeden, saklamadan, belki anlatarak, belki göstererek yaşamak istediklerini yaşamanı istiyorum. Daha bu satırlara sığdırmak istediğim tonlarca söz var ama hepsini bu mektubuma sığdıramam. Belki rüzgarın uğultusuna kulak verirsen dediklerimi duyabilirsin, kim bilir?
 
-Küslükler, tartışmalar, kırgınlıklar girerse bile bana hissettirdiğin arkadaşlığı asla unutmayacağım. Son 3 senede yaşadığın onca şeyin arasında hâlâ daha arkadaşlığını hissettirdiğin için sana edemeyeceğim kadar teşekkür borcum var. Teşekkürler! En kalpten hislerimle teşekkürler!
+Küslükler, tartışmalar, kırgınlıklar girerse bile bana hissettirdiğin arkadaşlığı asla unutmayacağım. Son 3 senede yaşadığım onca şeyin arasında hâlâ daha arkadaşlığını hissettirdiğin için sana edemeyeceğim kadar teşekkür borcum var. Teşekkürler! En kalpten hislerimle teşekkürler!
 
 YKS döneminin stresli aylarından dolayı erteliyorum fakat YKS sonuçları açıklanıp rahata erdiğimizde aklımdaki planı yapacağım, sözüm olsun! Ancak o zamana kadar senden beklemeni isteyeceğim. Umarım hediyeni beğenmişsindir! Fiziksel olarak veremesem de, kalpten bir hediye... Doğum günün tekrardan kutlu mutlu olsun!!!
 
@@ -33,8 +33,8 @@ function startTypewriter() {
     const element = document.getElementById('typewriter-text');
     const scrollArea = document.getElementById('scroll-area');
     let i = 0;
-    const normalSpeed = 50;  // Normal yazma hızı
-    const pauseSpeed = 500;  // Cümle sonu bekleme süresi (ms)
+    const normalSpeed = 50; 
+    const pauseSpeed = 500; 
 
     function type() {
         if (i < letterText.length) {
@@ -43,28 +43,53 @@ function startTypewriter() {
             
             let currentDelay = normalSpeed;
 
-            // Bekleme mantığı:
-            // Eğer karakter . ! veya ? ise;
             if (char === '.' || char === '!' || char === '?') {
-                // Bir önceki karakterin sayı olup olmadığını kontrol et (3. 18. gibi durumlar için)
-                // i > 0 kontrolü hata almamak için, /\d/ ise rakam kontrolü yapar
                 const isOrdinal = i > 0 && /\d/.test(letterText.charAt(i - 1));
-                
                 if (!isOrdinal) {
-                    currentDelay = pauseSpeed; // Cümle sonu ise uzun bekle
+                    currentDelay = pauseSpeed;
                 }
             }
 
             i++;
-            
-            // Otomatik kaydırma
             scrollArea.scrollTop = scrollArea.scrollHeight;
-            
-            // Belirlenen delay ile bir sonraki harfe geç
             setTimeout(type, currentDelay);
+        } else {
+            // YAZI BİTTİĞİNDE:
+            const btn = document.getElementById('downloadBtn');
+            btn.style.opacity = "1"; // Butonu görünür yap
         }
     }
     type();
+}
+
+// Fotoğraf olarak kaydetme fonksiyonu
+function saveAsImage() {
+    const letter = document.getElementById('letter-screen');
+    const downloadBtn = document.getElementById('downloadBtn');
+    
+    // Fotoğraf çekilirken butonun görünmemesi için geçici olarak gizle
+    downloadBtn.style.visibility = 'hidden';
+
+    html2canvas(document.querySelector("#typewriter-text"), {
+        backgroundColor: "#ffffff",
+        scale: 2, // Yüksek çözünürlük için (2x)
+        logging: false,
+        useCORS: true,
+        scrollX: 0,
+        scrollY: -window.scrollY,
+        onclone: (clonedDoc) => {
+            // Klon üzerinde maske efektini kaldır ki fotoğraf düzgün çıksın
+            clonedDoc.querySelector("#typewriter-text").style.paddingBottom = "50px";
+        }
+    }).then(canvas => {
+        const link = document.createElement('a');
+        link.download = 'dogum-gunu-mektubu.png';
+        link.href = canvas.toDataURL("image/png");
+        link.click();
+        
+        // Butonu geri getir
+        downloadBtn.style.visibility = 'visible';
+    });
 }
 
 document.getElementById("passwordInput").addEventListener("keyup", (e) => {

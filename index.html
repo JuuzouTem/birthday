@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doğum Günün Kutlu Olsun!</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Yeni Fontlar Eklendi -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Courgette&family=Kaushan+Script&family=Marck+Script&family=Patrick+Hand&family=Poppins:wght@300;400&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- Görüntü alma kütüphanesi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
 
@@ -35,6 +36,8 @@
         <div class="letter-wrapper" id="scroll-area">
             <div id="typewriter-text"></div>
         </div>
+        <!-- Kaydetme Butonu (Başlangıçta gizli) -->
+        <button id="downloadBtn" class="download-btn" onclick="saveAsImage()">Belki anı kalsın istersin diye</button>
     </div>
 
     <script src="script.js"></script>
