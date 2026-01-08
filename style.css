@@ -1,0 +1,92 @@
+:root {
+    --bg-color: #fce4ec;
+    --accent-color: #f06292;
+    --text-color: #444444;
+    
+    /* Font Seçenekleri - Burayı değiştirerek deneyebilirsin */
+    --font-letter: 'Marck Script', cursive; 
+    /* Diğerleri: 'Caveat', 'Indie Flower', 'Shadows Into Light' */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 450px;
+}
+
+.card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+/* Mektup Alanı - Ekranın %70'i */
+.letter-container {
+    width: 70vw;
+    height: 80vh;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* Üstten ve alttan silikleşme efekti */
+.letter-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 15px;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+#typewriter-text {
+    font-family: var(--font-letter);
+    font-size: 1.8rem; /* Patrick Hand için ideal boyut */
+    line-height: 2;    /* Okunabilirlik için geniş satır aralığı */
+    color: var(--text-color);
+    white-space: pre-wrap;
+    padding-top: 60px;
+    padding-bottom: 300px;
+    
+    /* Çizgili kağıt görünümü - Font boyutuna göre ayarlandı */
+    background-image: linear-gradient(#e1e1e1 1px, transparent 1px);
+    background-size: 100% 3.6rem; 
+    letter-spacing: 0px; /* Harfler arası hafif boşluk daha temiz durur */
+}
+
+/* Scrollbar tasarımı */
+.letter-wrapper::-webkit-scrollbar {
+    width: 4px;
+}
+.letter-wrapper::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 10px;
+}
+
+.hidden { display: none; }
+
+@media (max-width: 768px) {
+    .letter-container { width: 90vw; height: 85vh; padding: 20px; }
+    #typewriter-text { font-size: 1.3rem; background-size: 100% 2.6rem; }
+}
+
+input { border: none; border-bottom: 2px solid var(--accent-color); padding: 5px; outline: none; width: 120px; text-align: center; font-size: 1rem; }
+button { background: var(--accent-color); color: white; border: none; padding: 10px 25px; border-radius: 25px; cursor: pointer; margin-top: 20px; font-weight: bold; }
+.error { color: #e57373; font-size: 0.8rem; margin-top: 10px; }

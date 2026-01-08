@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doğum Günün Kutlu Olsun!</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Yeni Fontlar Eklendi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Courgette&family=Kaushan+Script&family=Marck+Script&family=Patrick+Hand&family=Poppins:wght@300;400&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Giriş Ekranı -->
+    <div id="login-screen" class="container">
+        <div class="card">
+            <h2>Küçük Bir Kontrol 🕵️‍♀️</h2>
+            <p>Sitedeki o radyo programı:</p>
+            <div class="input-group">
+                <span>The</span>
+                <input type="text" id="passwordInput" placeholder="......" autocomplete="off">
+            </div>
+            <button onclick="checkPassword()">Notu Oku</button>
+            <p id="errorMessage" class="error"></p>
+        </div>
+    </div>
+
+    <!-- Mektup Ekranı -->
+    <div id="letter-screen" class="letter-container hidden">
+        <div class="letter-wrapper" id="scroll-area">
+            <div id="typewriter-text"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
