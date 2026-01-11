@@ -1,14 +1,18 @@
-const letterText = `Dile kolay 3 yıl, ne çabuk geçmiş öyle değil mi?
+const letterText = `Takvime baktığımda 3 yıl geçmiş diyor ama sanki daha dün Furina hakkında sana o ilk mesajı atarken heyecanımdan olan titreyen parmaklarımı hissediyorum. Zamanın nasıl geçtiğini anlayamadığım, saatlerin eriyip gittiği gecelerde kaybolmuşum.
 
-2023 yılında Furina gelmeden önceki yorumla başlamış bir arkadaşlığın 3. yılı olacak. Umarım hazırladığım bu hediyeyi beğenmişsindir. Hediye belki gözünde basit veya uğraşılmamış gözüküyorsa bile (2 dakika falan sürdü dersen döverim he jjsdakjfhasdlkj) harcadığım her bir günden zevk aldım. :)
+2023 yılında Furina gelmeden önceki yorumla başlamış bir arkadaşlığın 3. yılı olacak, çılgınca öyle değil mi? Yarınlar yokmuşcasına hazırladığım için kendime bir motivasyon kaynağı bulmuş oldum. Bu motivasyonla tebessüm ettiğini düşünerek hazırlamak istedim. Belki mükemmel değil ama her bir parçasına seninle geçirdiğimiz o güzel günlerin neşesini sakladım. Just for you, ruhuna dokunabilsin diye. 
+
+Belki biraz repostlarından kopya çekmiş olabilirim ama hepsini sana bakarak seçtim. İçinde kalmasın diye bir ağaç ev, dışarının soğuğuna karşın içini ısıtsın diye bir sıcak çay, belki cama bakıp müzik eşliğinde düşünürsün diye bir radyo, yalnızlığını gidermen için bir baybaykuş, okudukça düşün diye 9 adet, kitabın arasına saklı notlar, gökyüzüne bakıp görmek istersin diye bir takımyıldızı. Mutlu olman bile mutlu olmam için bir sebep benim için.
 
 Doğum günün; tüm kalpten dileklerinin, isteklerinin gerçekleştiği, başarılar ve nice yeni arkadaşlıklarla dolu bir yaşın başlangıcı olsun, kutlu olsun!!! Hayatın tüm o zorluklarına karşın yine de isteklerine, umutlarına kavuşmak için çabalamaya devam etmen dileğiyle. Seni başarılarınla, başarısızlıklarınla, hedeflerinle, kararlarınla, seni sen yapan her şeyinle, olduğu gibi seviyoruz. Arkadaşın olmaktan zevk alıyoruz. Belki herkes için böyle değilse bile benim için böyle.
 
 Ağlamak istediğinde, gülmek istediğinde, kızmak istediğinde; gizlemeden, saklamadan, belki anlatarak, belki göstererek yaşamak istediklerini yaşamanı istiyorum. Daha bu satırlara sığdırmak istediğim tonlarca söz var ama hepsini bu mektubuma sığdıramam. Belki rüzgarın uğultusuna kulak verirsen dediklerimi duyabilirsin, kim bilir?
 
-Küslükler, tartışmalar, kırgınlıklar girerse bile bana hissettirdiğin arkadaşlığı asla unutmayacağım. Son 3 senede yaşadığım onca şeyin arasında hâlâ daha arkadaşlığını hissettirdiğin için sana edemeyeceğim kadar teşekkür borcum var. Teşekkürler! En kalpten hislerimle teşekkürler!
+Küslükler, tartışmalar, kırgınlıklar girerse bile bana hissettirdiğin arkadaşlığı asla unutmayacağım. Son 3 senede yaşadığın onca şeyin arasında hâlâ daha arkadaşlığını hissettirdiğin için sana edemeyeceğim kadar teşekkür borcum var. Teşekkürler! En kalpten hislerimle teşekkürler!
 
-YKS döneminin stresli aylarından dolayı erteliyorum fakat YKS sonuçları açıklanıp rahata erdiğimizde aklımdaki planı yapacağım, sözüm olsun! Ancak o zamana kadar senden beklemeni isteyeceğim. Umarım hediyeni beğenmişsindir! Fiziksel olarak veremesem de, kalpten bir hediye... Doğum günün tekrardan kutlu mutlu olsun!!!
+YKS döneminin stresli aylarından dolayı erteliyorum fakat tüm bu koşuşturmaca bittiğinde aklımdaki planı yapacağım, sözüm olsun! Ancak o zamana kadar senden beklemeni isteyeceğim. Umarım hediyeni beğenmişsindir! Fiziksel olarak veremesem de, kalpten bir hediye... Doğum günün tekrardan kutlu mutlu olsun!!!
+
+Belki Nana'nın Hachi'ye yazdığı kadar büyüleyici bir mektup yazamam ama en azından kalbimin sesini dinlemeyi denediğimi bilmeni isterim :)
 
 Sevgilerle...`;
 
